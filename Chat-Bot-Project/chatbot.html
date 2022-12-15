@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ChatBot Project</title>
+
+	<script src="https://kit.fontawesome.com/e47f13d9c9.js" crossorigin="anonymous"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+	<!-- Google Fonts Link -->
+	<link
+	href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+	rel="stylesheet"
+	/>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="jquery.convform.css">
+
+
+</head>
+<body>
+
+	<!-- ChatBot -->
+
+	<div class="chat_icon">
+		
+		<i class="fa-solid fa-comment" aria-hidden="true"></i>
+
+	</div>
+
+	<div class="chat_box">
+		<div class="conv-form-wrapper">
+			<form action="" method="GET" class="hidden">
+				<select name="category" data-conv-question="Hello! How can I help you?">
+					<option value="webDevelopment">Website Development ?</option>
+					<option value="digitalMarketing">Digital Marketing ?</option>
+				</select>
+				<div data-conv-fork="category">
+					<div data-conv-case="webDevelopment">
+						<input type="text" name="domain_name"data-conv-question="Please Tell me Your Domain Name ?">
+					</div>
+					<div data-conv-case="digitalMarketing">
+						<input type="text" name="company_name" data-conv-question="Please Tell me Your Company Name ?" >
+					</div>
+				</div>
+				<input type="text" name="name" data-conv-question="Please Tell me Your Name ?" >
+				<input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+				<select data-conv-question="Confirm?">
+					<option value="confirm">Confirm</option>
+				</select>
+			</form>
+		</div>
+	</div>
+
+	<!-- ChatBot End-->
+
+	<div class="container4">
+		<h2>ChatBot</h2>
+	</div>
+
+	<div class="container2">
+
+		<div class="container3">
+
+			<h3>Ertuğrul</h3>
+			<h5>Backend Developer</h3>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+</body>
+
+<script src="botjquery.js"></script>
+<script src="custom.js"></script>
+<script src="jquery.convform.js"></script>
+
+</html>

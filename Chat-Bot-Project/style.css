@@ -1,0 +1,111 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+.chat_icon{
+
+	position: fixed;
+	right: 40px;
+	bottom: 0;
+	font-size: 90px;
+	color: #2da0a8;
+	cursor: pointer;
+	z-index: 1000;
+
+}
+
+.chat_box{
+	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	width: 400px;
+	height: 75vh;
+	background: #dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+
+}
+
+.chat_box.active{
+	font-family: Arial, Helvetica, sans-serif;
+	transform: scaleY(1);
+
+}
+
+.hidden{
+
+display: none !important;
+
+}
+
+.conv-form-wrapper textarea{
+font-family: Arial, Helvetica, sans-serif;
+height: 30px;
+overflow: hidden;
+resize: none;
+
+}
+
+#messages{
+font-family: Arial, Helvetica, sans-serif;
+padding: 1px;
+
+}
+
+div.container2{
+
+	text-align: center;
+	position: absolute;
+	top:850px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+div.container4{
+
+	font-size: 80px;
+	position: relative;
+	bottom: 50px;
+
+}
+
+h3{
+
+
+	color:#000000;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 7px;
+	transition: all 0.5s;
+	text-transform: uppercase;
+}
+
+h5{
+	padding-bottom: 50px;
+	color:#000000;
+	font-size: 9px;
+	text-align: center;
+	letter-spacing: 7px;
+	transition: all 0.5s;
+	text-transform: uppercase;
+}
+
+body{
+
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
